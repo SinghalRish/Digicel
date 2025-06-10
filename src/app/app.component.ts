@@ -128,6 +128,7 @@ export class AppComponent {
   }
   toggleoverlay() {
     this.paymentoverlayservice.hide();
+    this.ismycash=false
   }
   movenext() {
     console.log('movenext from mycash1 caleed');
@@ -154,7 +155,7 @@ export class AppComponent {
     this.isfailure = true;
     this.issuccess = false;
   }
-  
+
   togglefailure() {
     this.paymentoverlayservice.hide();
     this.isfailure = false;
