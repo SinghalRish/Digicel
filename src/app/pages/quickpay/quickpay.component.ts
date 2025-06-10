@@ -34,7 +34,9 @@ export class QuickpayComponent {
   onsubmit() {
     this.isclicked = !this.isclicked;
   }
-
+  onleave() {
+    this.isclicked = !this.isclicked;
+  }
   paypal() {
     if (this.router.url === '/paypal') {
       this.layout.hide();

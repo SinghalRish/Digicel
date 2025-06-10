@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="section1_right">
-      <div class="card">
+      <div class="card" (mouseleave)="onleave()">
         <div class="content1">
           <div class="title"><p>Recharge and pay bill</p></div>
           <div class="description">
@@ -24,7 +24,7 @@
             />
             <input type="text" placeholder="Enter Amount" />
             <div class="button-border">
-              <button type="button" (click)="onsubmit()">Pay With</button>
+              <button type="button" (mouseenter)="onsubmit()">Pay With</button>
             </div>
           </form>
         </div>
