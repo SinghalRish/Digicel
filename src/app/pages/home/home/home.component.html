@@ -1,0 +1,60 @@
+<div class="overlay"></div>
+<div class="home_1">
+  <div class="background">
+    <div class="home1_left">
+      <div class="home1_left_1">
+        <p>Bringing the Digicel family together</p>
+      </div>
+      <div class="home1_left_2">
+        <p>
+          Make things easy! Top Up with a voucher or credit card, shop plans, or
+          add-ons to stay close to friends & family.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section2">
+  <div class="circle1">
+    <!-- <div class="text">Simply <span>More</span> With Digicel</div> -->
+  </div>
+  <div class="circle2"></div>
+  <div class="text">Simply <span class="more">More</span> With Digicel</div>
+</div>
+<div class="section3">
+  <div class="card-container">
+    <div class="para">
+      <p>
+        Take control of your Digicel services with just a few clicks. Experience
+        the ultimate convenience and peace of mind at one place.
+      </p>
+    </div>
+    @for( data of Card_data ; track data){
+    <div class="card-data">
+      <app-card [card_data]="data"></app-card>
+    </div>
+    }
+  </div>
+</div>
+<div class="section4">
+  <div class="section4_left">
+    <div class="wrapper">
+      <div class="section4_left_1"><p>Download the MyDigicel app</p></div>
+      <div class="section4_left_2">
+        <p>
+          Download the app and get full control. Available on both iOS and
+          Android.
+        </p>
+      </div>
+      <div class="section4_left_3">
+        <img src="download.svg" alt="download" />
+        <img src="gogle.svg" alt="google" />
+      </div>
+    </div>
+  </div>
+  <div class="section4_right">
+    <div class="section4_right_1"></div>
+    <div class="section4_right_2"><img src="mobile.png" alt="mobile" /></div>
+  </div>
+</div>

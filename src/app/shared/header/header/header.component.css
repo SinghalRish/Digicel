@@ -1,0 +1,148 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  background-color: transparent;
+}
+.flag {
+  padding-top: 4px;
+}
+
+.logo {
+  font-size: 1.2em;
+  img {
+    height: auto;
+    width: 80px;
+    background-color: #f5f6f8;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+._right {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+._right_1 {
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+._right_4 {
+  button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+  }
+
+  button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 1em;
+    padding: 3px; /* border thickness */
+    background: linear-gradient(to right, #cf2094, #fe402a);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+}
+._right_3 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .dropdown {
+    padding-top: 2px;
+    cursor: pointer;
+  }
+}
+
+.flag {
+  height: 25px;
+  width: 34px;
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+.quickpay-bg {
+  background-color: #f5f6f8;
+  transition: background-color 0.3s ease;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+button {
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px;
+    /* align-items: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 10px;
+  }
+  ._right {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+  }
+  ._right_4 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-widht: 600px) {
+  .wrapper {
+    font-size: 0.8rem;
+    /* gap: 20px; */
+  }
+  ._right_4 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    button {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+<nav class="nav" [ngClass]="{ 'quickpay-bg': router.url.includes('/quickpay') }">
+  <div class="logo">
+    <a routerLink="/home"><img src="digicel.png" alt=""></a>
+  </div>
+  <div class="_right">
+    <div class="wrapper">
+    <div class="_right_1"><a routerLink="/quickpay">Quick Pay</a></div>
+    <div class="_right_2">Download MyDigicel</div>
+    <div class="_right_3">
+      <div class="flag"><img [src]="selectedCountry.flagUrl" alt="" /></div>
+      <div class="Country_name">{{ selectedCountry.name }}</div>
+      <div class="dropdown"><fa-icon [icon]="faangledown" (click)="getoverlay()"></fa-icon></div>
+    </div></div>
+    <div class="_right_4">
+        <button (click)="login()">Login</button>
+    </div>
+  </div>
+</nav>

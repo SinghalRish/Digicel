@@ -1,0 +1,5 @@
+<div class="card" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div class="title" [ngClass]="{ 'hovered': hover }">{{ card_data.title }}</div>
+  <div class="description" [ngClass]="{ 'hovered': hover }">{{ card_data.description }}</div>
+  <div class="image"><img [src]="hover ? card_data.hoverUrl : card_data.url"alt="" /></div>
+</div>

@@ -1,0 +1,70 @@
+<div class="wrapper">
+  <div class="section1">
+    <div class="section1_left">
+      <div class="content">
+        <p>Easy, secure, and hassle-free bill payments</p>
+      </div>
+    </div>
+    <div class="section1_right">
+      <div class="card">
+        <div class="content1">
+          <div class="title"><p>Recharge and pay bill</p></div>
+          <div class="description">
+            <p>
+              Easy, secure, and hassle-free bill payments within few clicks
+              through quick pay.
+            </p>
+          </div>
+        </div>
+        <div class="form">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter Digicel Mobile Number/TV Chip ID"
+            />
+            <input type="text" placeholder="Enter Amount" />
+            <div class="button-border">
+              <button type="button" (click)="onsubmit()">Pay With</button>
+            </div>
+          </form>
+        </div>
+        <div *ngIf="isclicked" class="methods">
+          <div class="mycash payment" (click)="getoverlay()" >
+            <fa-icon [icon]="money"></fa-icon>
+            <p>My cash</p>
+          </div>
+          <div class="paypal payment" (click)="paypal()">
+            <fa-icon [icon]="money"></fa-icon>
+            <p>Pay Pal</p>
+          </div>
+          <div class="tonga payment" (click)="tonga()">
+            <fa-icon [icon]="money"></fa-icon>
+            <p>tonga</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section2">
+    <div class="section2_left">
+      <div class="section2_left_1"></div>
+      <div class="section2_left_2"><img src="mobile.png" alt="mobile" /></div>
+    </div>
+    <div class="section2_right">
+      <div class="wrapper">
+        <div class="section2_right_1"><p>Download the MyDigicel app</p></div>
+        <div class="section2_right_2">
+          <p>
+            Download the app and get full control. Available on both iOS and
+            Android.
+          </p>
+        </div>
+        <div class="section2_right_3">
+          <img src="download.svg" alt="download" />
+          <img src="gogle.svg" alt="google" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

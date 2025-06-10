@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.477" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a101fe"/>
+      <stop offset="1" stop-color="#fe402a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="You_tube" data-name="You tube" transform="translate(-1562 -4716)">
+    <path id="Ellipse_356" data-name="Ellipse 356" d="M23,1a22.006,22.006,0,0,0-8.563,42.272A22.006,22.006,0,0,0,31.563,2.728,21.861,21.861,0,0,0,23,1m0-1A23,23,0,1,1,0,23,23,23,0,0,1,23,0Z" transform="translate(1562 4716)" fill="url(#linear-gradient)"/>
+    <path id="Path_5479" data-name="Path 5479" d="M232.061,16.024a1.889,1.889,0,0,0-1.328-1.337,54.674,54.674,0,0,0-11.742,0,1.89,1.89,0,0,0-1.329,1.337,19.816,19.816,0,0,0-.314,3.64,19.821,19.821,0,0,0,.314,3.641,1.889,1.889,0,0,0,1.329,1.337,44.609,44.609,0,0,0,5.871.316,44.613,44.613,0,0,0,5.871-.316,1.888,1.888,0,0,0,1.328-1.337,19.785,19.785,0,0,0,.314-3.641,19.78,19.78,0,0,0-.314-3.64M223.325,21.9V17.431l3.927,2.234Z" transform="translate(1359.651 4719.628)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

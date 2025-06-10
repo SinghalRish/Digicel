@@ -1,0 +1,210 @@
+.tonga {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+}
+
+.payment {
+  background-color: white;
+  height: 600px;
+  width: 700px;
+  display: flex;
+  box-shadow: 0px 1px 5px whitesmoke;
+}
+.sidebar {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 1px 0px 2px rgba(128, 128, 128, 0.3);
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  gap: 30px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.middle {
+  align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 12px;
+  /* flex-direction: column; */
+  .button {
+    button {
+      padding: 2px 10px;
+      color: black;
+      background-color: rgba(255, 255, 0, 0.863);
+      border: none;
+      border-radius: 5px;
+      font-weight: 400;
+    }
+  }
+}
+
+.top {
+  background-color: gray;
+  p {
+    color: white;
+  }
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+.logo {
+  /* background-color: #b90a29; */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.tittle {
+  font-size: large;
+  font-weight: 600;
+}
+.small-tittle {
+  text-align: center;
+  opacity: 0.6;
+}
+h3 {
+  color: red;
+  opacity: 0.8;
+}
+.credit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  p {
+    color: red;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+.last {
+  button {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+}
+button {
+  cursor: pointer;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-top: 80px;
+  width: 100%;
+  /* padding-left: 20px; */
+}
+
+.cardlogo {
+  img {
+    width: 100px;
+    height: 50px;
+  }
+}
+.input {
+  input {
+    border-bottom: none;
+    width: 100%;
+  }
+}
+
+.card-number,
+.user-details,
+.pay {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expiry-cvv {
+  display: flex;
+  .expiry {
+    width: 80%;
+    input {
+      border-right: none;
+      width: 100%;
+    }
+  }
+}
+
+.name {
+  position: relative;
+  .p {
+    position: absolute;
+    top: -8px;
+    font-size: 12px;
+    background-color: white;
+    opacity: 0.6;
+    left: 6px;
+  }
+  input {
+    border-bottom: none;
+    width: 100%;
+  }
+}
+
+.email-phone {
+  display: flex;
+  .email {
+    position: relative;
+    p {
+      position: absolute;
+      top: -8px;
+      font-size: 12px;
+      background-color: white;
+      opacity: 0.6;
+      left: 6px;
+    }
+    width: 80%;
+    input {
+      border-right: none;
+      width: 100%;
+    }
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  img {
+    width: 100px;
+    height: 40px;
+  }
+}
+input {
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+.pay {
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 8px 0px;
+    background-color: #b90a29;
+    color: white;
+  }
+}

@@ -1,0 +1,46 @@
+.card {
+  padding-left: 40px;
+  background-color: #eaeaea;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  background: linear-gradient(135deg, #a101fe 0%, #fe402a 100%);
+}
+
+.title,
+.description {
+  transition: color 0.3s ease;
+}
+
+.card:hover .title,
+.card:hover .description {
+  color: white;
+  opacity: 1;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.description {
+  opacity: 0.6;
+  padding-right: 5px;
+}
+
+.image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  img {
+    width: 50px;
+    height: 60px;
+  }
+}
