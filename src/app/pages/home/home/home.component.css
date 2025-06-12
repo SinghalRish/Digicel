@@ -246,6 +246,16 @@
       height: 80px;
     }
   } */
+  .card-container {
+    gap: 15px;
+    padding: 0 5px;
+  }
+  .para {
+    width: 44%;
+  }
+  .card-data {
+    width: 46%;
+  }
 
   .section4_right_2 {
     img {
