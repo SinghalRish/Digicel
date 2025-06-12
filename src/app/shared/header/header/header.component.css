@@ -1,5 +1,5 @@
 .nav {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 .flag {
   padding-top: 4px;
 }
-a{
+a {
   cursor: pointer;
   text-decoration: none;
   color: black;
@@ -53,14 +53,14 @@ a{
   align-items: center;
   display: flex;
   button {
-    width: 70%;
+    width: 80%;
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 20px 20px;
+    font-size: 1rem;
     background-color: transparent;
     border: none;
-    border-radius: 1em;
+    border-radius: 2rem;
     z-index: 1;
   }
 
@@ -68,7 +68,7 @@ a{
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 1em;
+    border-radius: 2rem;
     padding: 1px; /* border thickness */
     background: linear-gradient(to right, #cf2094, #fe402a);
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
@@ -79,6 +79,7 @@ a{
   }
 }
 ._right_3 {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -159,8 +160,6 @@ button {
       width: 100%;
     }
   }
-
- 
 }
 
 /* @media (max-width: 900px) {

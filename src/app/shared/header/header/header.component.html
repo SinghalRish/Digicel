@@ -8,11 +8,11 @@
       <div class="_right_2">
         <a  (click)="movetodownload()"> Download MyDigicel</a>
         </div>
-      <div class="_right_3">
+      <div class="_right_3" (click)="getoverlay()">
         <div class="flag"><img [src]="selectedCountry.flagUrl" alt="" /></div>
         <div class="Country_name">{{ selectedCountry.name }}</div>
         <div class="dropdown">
-          <fa-icon [icon]="faangledown" (click)="getoverlay()"></fa-icon>
+          <fa-icon [icon]="faangledown" ></fa-icon>
         </div>
       </div>
     </div>
