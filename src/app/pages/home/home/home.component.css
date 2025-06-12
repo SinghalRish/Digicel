@@ -93,11 +93,13 @@
 
 .card-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 10px;
+  /* gap: 30px; */
 }
 .para {
+  margin-right: 20px;
   width: 48%;
   font-size: 1.8em;
   opacity: 0.8;
@@ -113,8 +115,10 @@
 }
 
 .card-data {
-  max-width: 280px;
-  min-height: 400px;
+  width: 24%;
+  margin-right: 10px;
+  /* max-width: 280px; */
+  min-height: 300px;
 }
 
 .section4 {
