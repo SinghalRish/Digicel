@@ -1,4 +1,10 @@
+@font-face {
+  font-family: myfont;
+  src: url(myfont.otf);
+}
+
 * {
+  font-family: myfont;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +14,7 @@ body {
   background-color: #fff;
 }
 
-body,html{
+body,
+html {
   height: 100%;
 }
-

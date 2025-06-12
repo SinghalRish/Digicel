@@ -13,10 +13,8 @@
 
 .overlay-content {
   height: auto;
-  padding-bottom: 20px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  padding:0px 60px 50px;
+  max-width: 800px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   position: relative;
@@ -40,12 +38,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  /* gap: 24px; */
   padding-left: 15px;
 }
 
 .flag-card {
   flex: 0 0 calc(100% / 3 - 24px);
+  width: 33.33%;
+  margin-bottom: 3rem;
   box-sizing: border-box;
   display: flex;
   gap: 10px;
@@ -273,3 +273,37 @@ span {
   margin-right: auto;
 }
 
+@media(max-width:767px){
+  .overlay-content{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    overflow-y: auto;
+    flex: 1;
+    padding: 0;
+    align-items: flex-start;
+    max-height: 500px;
+    padding-left: 10px;
+  }
+  .flag-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .title{
+    h1{
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+  .flag-card{
+        width: 100%;
+    p{
+      width: 100%;
+    }
+    img{
+      width: 40px;
+    }
+  }
+}

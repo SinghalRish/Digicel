@@ -32,10 +32,12 @@ export class QuickpayComponent {
     console.log('getoverlay called from my cash');
   }
   onsubmit() {
-    this.isclicked = !this.isclicked;
+    this.isclicked = true;
   }
   onleave() {
-    this.isclicked = !this.isclicked;
+    // console.log(this.isclicked)
+    this.isclicked = false;
+    // console.log(this.isclicked)
   }
   paypal() {
     if (this.router.url === '/paypal') {

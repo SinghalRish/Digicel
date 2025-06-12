@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  background-color: #f5f6f8;
+  /* background-color: #f5f6f8; */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -17,7 +17,7 @@
   display: flex;
 }
 .content {
-  font-size: 5.4em;
+  font-size: 4rem;
   width: 80%;
   word-spacing: 2px;
   margin-left: auto;
@@ -32,11 +32,11 @@
 }
 
 .card {
-  background: url("Mask.svg");
+  background: url("Mask.svg") no-repeat top;
   background-size: cover;
   border-radius: 30px;
   height: 450px;
-  width: 350px;
+  max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* X, Y, blur, color */
   position: relative;
   /* border: 1px solid red; */
@@ -45,9 +45,14 @@
   flex-direction: column;
   gap: 20px;
 }
+.form{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 form {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   gap: 10px;
@@ -55,10 +60,13 @@ form {
   flex-direction: column;
 
   input {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    background: transparent;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.404);
     height: 40px;
-    padding: 10px;
+    padding: 20px;
   }
 
   /* button {
@@ -74,7 +82,7 @@ form {
 .content1 {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -82,6 +90,7 @@ form {
 }
 .title {
   font-size: 3em;
+  padding: 20px 0px;
 }
 .description {
   opacity: 0.6;
@@ -141,17 +150,22 @@ form {
 }
 
 .section2 {
+  margin-top: 40px;
   display: flex;
   height: 500px;
+  background: transparent url("quick.svg") no-repeat ;
+  background-size: cover;
+  background-position: center;
 }
 .section2_left {
   width: 50%;
   position: relative;
+  
 }
 .section2_left_1 {
-  background: transparent url("quick.svg");
+  /* background: transparent url("quick.svg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   height: 500px;
   width: 100%;
   z-index: -1;
@@ -250,6 +264,9 @@ form {
   .section1_right {
     width: 100%;
   }
+  .section1_right {
+    padding: 0px 20px;
+  }
   .section1_left {
     .content {
       p {
@@ -272,22 +289,35 @@ form {
     }
   }
   .section2 {
-    /* flex-direction: column; */
+    flex-direction: column;
     height: auto;
+    padding: 20px;
   }
-  .section2_left_1,
-  .section2_left_2 {
-    /* display: none; */
-    visibility: hidden;
-  }
+  
   .section2_left {
     width: auto;
   }
-  .section2_right {
+  .section2_right,.section2_right_2 {
     width: 100%;
+    padding: 0;
+  }
+  
+  .section2_right_1,.section2_right_2{
+    text-align: center;
+  }
+  .section2_right_3{
+    justify-content: center;
+  }
+  .section2_left_2{
+    bottom: 90px;
+    left: 20px;
+    img{
+      max-width: 250px;
+      height: auto;
+    }
   }
 
-  .section1 {
+  /* .section1 {
     padding-right: 20px;
-  }
+  } */
 }

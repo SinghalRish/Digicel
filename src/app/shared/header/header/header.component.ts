@@ -7,7 +7,7 @@ import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [FontAwesomeModule, RouterLink,NgClass],
+  imports: [FontAwesomeModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
@@ -20,11 +20,27 @@ export class HeaderComponent {
       this.selectedCountry = country;
     });
   }
-  constructor(private overlay: OverlayService , public router :Router) {}
+  constructor(private overlay: OverlayService, public router: Router) {}
   getoverlay() {
     this.overlay.showOverlay();
   }
-  login(){
-    this.router.navigate(['/login'])
+  login() {
+    this.router.navigate(['/login']);
+  }
+  movetodownload() {
+    if (this.router.url === '/home') {
+      const element = document.getElementById('download');
+      console.log(element);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      if (this.router.url === '/quickpay') {
+        const element = document.getElementById('download_quickpay');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
   }
 }
