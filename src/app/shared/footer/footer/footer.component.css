@@ -15,10 +15,13 @@
   display: flex;
   justify-content: space-between;
 }
+.footer_1 {
+  align-items: center;
+}
 
 .logo {
-  img{
-    width: 60px;
+  img {
+    width: 100px;
     height: 100%;
   }
   width: 50%;
@@ -60,7 +63,7 @@
   justify-content: center;
   align-items: center;
   /* display: inline-block; */
-  img{
+  img {
     height: 24px;
     width: 24px;
   }
@@ -86,17 +89,16 @@
   font-size: 0.8em;
 }
 
-@media (max-width:600px){
-  .footer2{
+@media (max-width: 600px) {
+  .footer2 {
     flex-direction: column;
     gap: 20px;
   }
-  .footer2_left{
+  .footer2_left {
     width: 100%;
   }
-  .footer2_right{
+  .footer2_right {
     flex-direction: column;
     width: 100%;
-    
   }
 }

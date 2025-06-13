@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Card_data } from '../../../Models/interface';
 import { CardComponent } from '../../../shared/card/card/card.component';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,9 @@ import { CardComponent } from '../../../shared/card/card/card.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  ngOninit(): void{
+    Aos.init()
+  }
   Card_data: Card_data[] = [
     {
       title: 'MANAGE PLANS',
@@ -48,4 +52,5 @@ export class HomeComponent {
       hoverUrl: 'help2.svg',
     },
   ];
+
 }

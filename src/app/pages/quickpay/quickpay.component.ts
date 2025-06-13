@@ -6,6 +6,7 @@ import { OverlayService } from '../../services/overlay.service';
 import { PaymentoverlayService } from '../../services/paymentoverlay.service';
 import { LayoutService } from '../../services/layout.service';
 import { ActivatedRoute, Route, Router } from '@angular/router';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-quickpay',
@@ -23,6 +24,9 @@ export class QuickpayComponent {
     private router: Router,
     private route: ActivatedRoute
   ) {}
+  ngOnInit(){
+    Aos.init()
+  }
   // getoverlay(){
   //   console.log("mycash clicked")
   //   this.overlay.showOverlay()

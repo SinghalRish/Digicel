@@ -6,7 +6,7 @@
         <div class="home1_left_1">
           <p>Bringing the Digicel family together</p>
         </div>
-        <div class="home1_left_2">
+        <div class="home1_left_2" >
           <p>
             Make things easy! Top Up with a voucher or credit card, shop plans,
             or add-ons to stay close to friends & family.
@@ -16,23 +16,23 @@
     </div>
   </div>
 
-  <div class="section2">
+  <div class="section2" >
     <div class="circle1">
       <!-- <div class="text">Simply <span>More</span> With Digicel</div> -->
     </div>
     <div class="circle2"></div>
-    <div class="text">Simply <span class="more">More</span> With Digicel</div>
+    <div class="text" >Simply <span class="more">More</span> With Digicel</div>
   </div>
   <div class="section3">
     <div class="card-container">
-      <div class="para">
-        <p>
+      <div class="para"data-aos="fade-up" data-aos-duration="500" >
+        <p >
           Take control of your Digicel services with just a few clicks.
           Experience the ultimate convenience and peace of mind at one place.
         </p>
       </div>
       @for( data of Card_data ; track data){
-      <div class="card-data">
+      <div class="card-data"data-aos="flip-left" data-aos-duration="1000" >
         <app-card [card_data]="data"></app-card>
       </div>
       }
@@ -56,7 +56,7 @@
     </div>
     <div class="section4_right">
       <div class="section4_right_1"></div>
-      <div class="section4_right_2"><img src="mobile.png" alt="mobile" /></div>
+      <div class="section4_right_2" data-aos="fade-up" data-aos-duration="2000"><img src="mobile.png" alt="mobile" /></div>
     </div>
   </div>
 </div>

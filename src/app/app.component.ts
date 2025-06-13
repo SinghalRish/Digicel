@@ -10,6 +10,9 @@ import { PaymentoverlayService } from './services/paymentoverlay.service';
 import { FormsModule, NgModel } from '@angular/forms';
 import { LayoutService } from './services/layout.service';
 import { filter } from 'rxjs';
+import * as AOS from 'aos';
+
+
 
 @Component({
   selector: 'app-root',
@@ -52,6 +55,7 @@ export class AppComponent {
   ) {}
 
   ngOnInit() {
+    AOS.init();
     this.paymentoverlayservice.overlaymycash$.subscribe((data) => {
       this.ismycash = data;
       // this.ismycash=data
