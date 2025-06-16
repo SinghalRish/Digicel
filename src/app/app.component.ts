@@ -11,6 +11,7 @@ import { FormsModule, NgModel } from '@angular/forms';
 import { LayoutService } from './services/layout.service';
 import { filter } from 'rxjs';
 import * as AOS from 'aos';
+import { LoginheaderComponent } from './shared/loginheader/loginheader.component';
 
 
 
@@ -84,8 +85,10 @@ export class AppComponent {
           this.layoutservice.hide();
         } else if (event.urlAfterRedirects === '/tonga') {
           this.layoutservice.hide();
-        } else {
-          this.layoutservice.show();
+        } else if(event.urlAfterRedirects === '/login'){
+          this.layoutservice.hide();
+        }else{
+          this.layoutservice.show()
         }
       });
 

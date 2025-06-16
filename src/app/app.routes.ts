@@ -4,6 +4,7 @@ import { QuickpayComponent } from './pages/quickpay/quickpay.component';
 import { PaypalComponent } from './pages/paypal/paypal/paypal.component';
 import { TongaComponent } from './pages/tonga/tonga.component';
 import { LoginComponent } from './pages/login/login.component';
+import { LoginDashboardComponent } from './pages/login-dashboard/login-dashboard.component';
 
 export const routes: Routes = [
   {
@@ -22,12 +23,12 @@ export const routes: Routes = [
     path: 'paypal',
     component: PaypalComponent,
   },
-   {
+  {
     path: 'tonga',
     component: TongaComponent,
   },
-   {
+  {
     path: 'login',
-    component: LoginComponent,
+    component: LoginDashboardComponent,
   },
 ];

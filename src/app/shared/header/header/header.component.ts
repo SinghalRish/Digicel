@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Router, RouterLink } from '@angular/router';
 import { Country, OverlayService } from '../../../services/overlay.service';
 import { NgClass } from '@angular/common';
+import { LayoutService } from '../../../services/layout.service';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +21,7 @@ export class HeaderComponent {
       this.selectedCountry = country;
     });
   }
-  constructor(private overlay: OverlayService, public router: Router) {}
+  constructor(private overlay: OverlayService, public router: Router,private layout:LayoutService) {}
   getoverlay() {
     this.overlay.showOverlay();
   }

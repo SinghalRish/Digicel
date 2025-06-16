@@ -10,9 +10,9 @@ import Aos from 'aos';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  ngOninit(): void{
-    Aos.init()
-  }
+  // ngOninit(): void{
+  //   Aos.init()
+  // }
   Card_data: Card_data[] = [
     {
       title: 'MANAGE PLANS',
