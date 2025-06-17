@@ -20,7 +20,7 @@
 
 .left {
   height: 100%;
-  width: 65%;
+  width: 59%;
   background-color: white;
   border-radius: 40px;
   padding: 10px;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 49%;
+    width: 42%;
     justify-content: space-between;
 
     .left_1_1 {
@@ -142,7 +142,7 @@
     display: flex;
     /* height: 100%; */
     min-height: 400px;
-    width: 49%;
+    width: 56%;
     gap: 10px;
     flex-direction: column;
 
@@ -191,6 +191,7 @@
       .data,
       .voice,
       .sms {
+        cursor: pointer;
         padding-bottom: 2px;
       }
       .highlight {
@@ -218,6 +219,9 @@
           p {
             font-size: 0.8rem;
           }
+        }
+        .usage_left_2 {
+          border: none;
         }
         .data_usage {
           display: flex;
@@ -301,6 +305,7 @@
       }
       .left_2_2-3 {
         display: flex;
+        width: 70%;
         /* gap: 80px; */
         justify-content: space-between;
         h6 {
@@ -330,11 +335,11 @@
 }
 
 .right {
-  width: 34%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-height: 400px;
+  /* min-height: 400px; */
 
   .right_1,
   .right_2 {
@@ -471,13 +476,16 @@
   border-radius: 40px;
   padding: 15px;
 
+  h4 {
+    padding-left: 10px;
+  }
   .middle {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
   }
 
   .outter-button {
@@ -533,7 +541,12 @@
 
   .right {
     width: 100%;
+    /* height: auto; */
+    height: 100%;
     flex-direction: row;
+  }
+  .right_1,.right_2{
+    height: 100%;
   }
   .section2 {
     flex-wrap: wrap;

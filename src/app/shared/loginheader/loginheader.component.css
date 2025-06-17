@@ -8,7 +8,7 @@
 
 .right {
   gap: 10px;
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,12 +33,15 @@
   }
 
   .recharge_type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     color: black;
     font-size: 0.6rem;
     border-radius: 10px;
-    margin-right: 25px;
-    width: 30%;
+    margin-right: 60px;
+    width: 20%;
     text-align: center;
     height: 20px;
     /* text-align: center; */
@@ -48,7 +51,7 @@
     }
   }
   .name_number {
-    width: 30%;
+    width: 25%;
   }
 
   .switch {
@@ -117,8 +120,8 @@
   }
 }
 
-@media(max-width:1240px){
-  .right{
+@media (max-width: 1240px) {
+  .right {
     width: 50%;
   }
 }

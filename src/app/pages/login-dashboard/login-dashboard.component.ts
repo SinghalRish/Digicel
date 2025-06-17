@@ -1,31 +1,46 @@
 import { Component } from '@angular/core';
 import { LoginheaderComponent } from '../../shared/loginheader/loginheader.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-login-dashboard',
-  imports: [LoginheaderComponent, CommonModule],
+  imports: [LoginheaderComponent, CommonModule, NgClass],
   templateUrl: './login-dashboard.component.html',
   styleUrl: './login-dashboard.component.css',
 })
 export class LoginDashboardComponent {
   isactiveplan = false;
   isexhausted = false;
+  isdata = true;
+  issms = false;
+  isvoice = false;
   toggle() {
     if (this.isactiveplan) {
       this.isactiveplan = false;
       if (this.isexhausted) {
         this.isexhausted = false;
-      } 
-      else {
+      } else {
         this.isexhausted = true;
       }
-    } 
-    else if (!this.isexhausted) {
+    } else if (!this.isexhausted) {
       this.isactiveplan = true;
-    } 
-    else {
+    } else {
       this.isexhausted = false;
     }
+  }
+  todata() {
+    this.isdata = true;
+    this.issms = false;
+    this.isvoice = false;
+  }
+  tovoice() {
+    this.isdata = false;
+    this.issms = false;
+    this.isvoice = true;
+  }
+  tosms() {
+    this.isdata = false;
+    this.issms = true;
+    this.isvoice = false;
   }
 }

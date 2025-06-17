@@ -65,9 +65,27 @@
               <button>View Details</button>
             </div>
             <div class="options">
-              <div class="data highlight">Data</div>
-              <div class="voice light">Voice</div>
-              <div class="sms light">SMS</div>
+              <div
+                class="data"
+                [ngClass]="{ highlight: isdata, light: !isdata }"
+                (click)="todata()"
+              >
+                Data
+              </div>
+              <div
+                class="voice"
+                [ngClass]="{ highlight: isvoice, light: !isvoice }"
+                (click)="tovoice()"
+              >
+                Voice
+              </div>
+              <div
+                class="sms"
+                [ngClass]="{ highlight: issms, light: !issms }"
+                (click)="tosms()"
+              >
+                SMS
+              </div>
             </div>
           </div>
           <div class="exhausted" *ngIf="isexhausted">
