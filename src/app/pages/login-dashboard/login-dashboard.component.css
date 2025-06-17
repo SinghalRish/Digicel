@@ -345,6 +345,7 @@
   .right_2 {
     height: 50%;
     border-radius: 40px;
+    overflow: hidden;
 
     img {
       height: 100%;
