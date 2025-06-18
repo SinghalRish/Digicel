@@ -14,6 +14,9 @@ export class LoginDashboardComponent {
   isdata = true;
   issms = false;
   isvoice = false;
+  totaldata = 10;
+  remaineddata = 6;
+
   toggle() {
     if (this.isactiveplan) {
       this.isactiveplan = false;
@@ -42,5 +45,14 @@ export class LoginDashboardComponent {
     this.isdata = false;
     this.issms = true;
     this.isvoice = false;
+  }
+  // Assume values change dynamically
+  color1 = 'green';
+  color2 = 'gray';
+  
+  percentage = ((this.remaineddata / this.totaldata) * 100).toFixed(1); 
+
+  getBorderGradient() {
+    return `conic-gradient(${this.color1} 0% ${this.percentage}%, ${this.color2} ${this.percentage}% 100%)`;
   }
 }

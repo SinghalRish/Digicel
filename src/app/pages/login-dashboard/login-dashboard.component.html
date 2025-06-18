@@ -99,8 +99,8 @@
               <div class="usage_left_1">
                 <h4>DATA USAGE</h4>
                 <div class="data_usage">
-                  <h4>8.10 GB</h4>
-                  <p>left of 9 GB</p>
+                  <h4>{{ remaineddata }}GB</h4>
+                  <p>left of {{ totaldata }} GB</p>
                 </div>
               </div>
               <div class="usage_left_2">
@@ -109,10 +109,15 @@
               </div>
             </div>
             <div class="usage_right">
-              <div class="outter_circle">
-                <div class="inner_circle">
-                  <h3>91%</h3>
-                  <p>Remaining</p>
+              <div
+                class="outter_circle"
+                [ngStyle]="{ 'background-image': getBorderGradient() }"
+              >
+                <div class="circle_wrapper">
+                  <div class="inner_circle">
+                    <h3>{{ percentage }}%</h3>
+                    <p>Remaining</p>
+                  </div>
                 </div>
               </div>
             </div>
