@@ -7,7 +7,9 @@
         <div class="tittle"><p>Digicel Tonga 2</p></div>
         <div class="small-tittle"><p>Total payment</p></div>
         <h3>TOP 1.00</h3>
-        <div class="small-tittle"><p>Id-invoice<br />jkbjwqv11u8218dklc</p></div>
+        <div class="small-tittle">
+          <p>Id-invoice<br />jkbjwqv11u8218dklc</p>
+        </div>
         <div class="wrapper">
           <p>1 items</p>
           <div class="button"><button>View</button></div>
@@ -17,32 +19,47 @@
           <p>Credit Card</p>
         </div>
       </div>
-      <div class="last"><button (click)="toggle()">Back to Merchant</button></div>
+      <div class="last">
+        <button (click)="toggle()">Back to Merchant</button>
+      </div>
     </div>
     <div class="card-details">
       <div class="card-number">
         <div class="cardlogo"><img src="visa.png" alt="" /></div>
         <div class="input">
+          <span> <fa-icon [icon]="money" class="icon"></fa-icon> </span>
           <input type="text" placeholder="Credit Card Number" />
         </div>
         <div class="expiry-cvv">
           <div class="expiry">
+            <span> <fa-icon [icon]="calendar" class="icon"></fa-icon> </span>
             <input type="text" placeholder="Expiry MM/YY" />
           </div>
-          <div class="cvv"><input type="text" placeholder="CVV" /></div>
+          <div class="cvv">
+            <span> <fa-icon [icon]="lock" class="icon"></fa-icon> </span>
+            <input type="text" placeholder="CVV" />
+          </div>
         </div>
       </div>
       <div class="user-details">
         <div class="name">
           <div class="p"><p>Name On Card</p></div>
-          <input type="text" placeholder="" />
+          <span> <fa-icon [icon]="user" class="icon"></fa-icon> </span>
+          <input type="text" placeholder="SelfCare Demo" />
         </div>
         <div class="email-phone">
           <div class="email">
-            <p>Email</p>
+            <div class="p-email">
+              <p>Email</p>
+            </div>
+            <span> <fa-icon [icon]="email" class="icon"></fa-icon> </span>
+
             <input type="email" placeholder="user@yourdomain.com" />
           </div>
-          <div class="phone"><input type="text" placeholder="Phone" /></div>
+          <div class="phone">
+            <span> <fa-icon [icon]="phone" class="icon"></fa-icon> </span>
+            <input type="text" placeholder="Phone" />
+          </div>
         </div>
       </div>
       <div class="pay"><button (click)="pay()">pay</button></div>

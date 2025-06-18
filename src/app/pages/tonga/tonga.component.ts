@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faMoneyCheck } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMoneyCheck,
+  faCalendarDay,
+  faLock,
+  faUser,
+  faEnvelope,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons';
 import { LayoutService } from '../../services/layout.service';
 import { Router } from '@angular/router';
 import { PaymentoverlayService } from '../../services/paymentoverlay.service';
@@ -18,6 +25,11 @@ export class TongaComponent {
     private payment: PaymentoverlayService
   ) {}
   money = faMoneyCheck;
+  calendar = faCalendarDay;
+  lock = faLock;
+  user = faUser;
+  email = faEnvelope;
+  phone = faPhone;
   toggle() {
     this.layou.show();
     this.route.navigate(['/quickpay']);
