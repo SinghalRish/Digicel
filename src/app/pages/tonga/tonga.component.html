@@ -24,8 +24,40 @@
       </div>
     </div>
     <div class="card-details">
+      <div class="sidebar-wrapper" *ngIf="issidebar">
+        <div class="sidebar-phone">
+          <div class="top"><p>Bahasa</p></div>
+          <div class="middle">
+            <div class="logo"><img src="digicel.png" alt="" /></div>
+            <div class="tittle"><p>Digicel Tonga 2</p></div>
+            <div class="small-tittle"><p>Total payment</p></div>
+            <h3>TOP 1.00</h3>
+            <div class="small-tittle">
+              <p>Id-invoice<br />jkbjwqv11u8218dklc</p>
+            </div>
+            <div class="wrapper">
+              <p>1 items</p>
+              <div class="button"><button>View</button></div>
+            </div>
+            <div class="credit">
+              <fa-icon [icon]="money" class="icon"></fa-icon>
+              <p>Credit Card</p>
+            </div>
+          </div>
+          <div class="last">
+            <button (click)="toggle()">Back to Merchant</button>
+          </div>
+        </div>
+      </div>
       <div class="card-number">
-        <div class="cardlogo"><img src="visa.png" alt="" /></div>
+        <div class="cardlogo">
+          <img src="visa.png" alt="" />
+          <div class="menu" (click)="opensidebar()">
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="last-line"></div>
+          </div>
+        </div>
         <div class="input">
           <span> <fa-icon [icon]="money" class="icon"></fa-icon> </span>
           <input type="text" placeholder="Credit Card Number" />
