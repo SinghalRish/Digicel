@@ -1,17 +1,23 @@
 <div class="header" data-aos="fade-down" data-aos-duration="800">
-  <div class="logo" (click)="navigate()"><img src="logo.png" alt="logo" /></div>
-  <div class="right">
-    <div class="wrapper1">
-      <div class="right_1">
-        <div class="name_number"><p>Kenny Sebastian 6768788170</p></div>
-        <div class="recharge_type"><p>MOBILE PREPAID</p></div>
-        <div class="switch">
-          <div class="switch-account"><p>Switch Account</p></div>
+  <div class="header-wrapper">
+    <div class="logo" (click)="navigate()">
+      <img src="logo.png" alt="logo" />
+    </div>
+    <div class="right">
+      <div class="wrapper1">
+        <div class="right_1">
+          <div class="name_number"><p>Kenny Sebastian 6768788170</p></div>
+          <div class="recharge_type"><p>MOBILE PREPAID</p></div>
+          <div class="switch">
+            <div class="switch-account"><p>Switch Account</p></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="wrapper2">
-      <div class="right_2"><p>{{initials}}</p></div>
+      <div class="wrapper2">
+        <div class="right_2">
+          <p>{{ initials }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

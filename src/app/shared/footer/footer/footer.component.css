@@ -102,3 +102,10 @@
     width: 100%;
   }
 }
+
+@media(min-width:1620px){
+  .footer-wrapper{
+    max-width: 1620px;
+    margin: 0px auto;
+  }
+}

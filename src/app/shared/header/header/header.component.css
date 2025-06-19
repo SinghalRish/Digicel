@@ -229,3 +229,9 @@ button {
     }
   }
 }
+@media (min-width: 1620px) {
+  .nav {
+    max-width: 1620px;  
+    margin: 0px auto;
+  }
+}

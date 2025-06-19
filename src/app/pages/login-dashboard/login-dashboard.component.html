@@ -1,240 +1,259 @@
 <app-loginheader></app-loginheader>
-<div class="wrapper" (click)="toggle()">
-  <div
-    class="bottom_logo animate__animated animate__jello animate__slower animate__infinite"
-  >
-    <img src="bottom-logo.png" alt="" />
-  </div>
-  <div class="greeting" data-aos="fade-right" data-aos-duration="1000">
-    <p>Good Morning, Kenny</p>
-  </div>
-  <div class="section1">
-    <div class="left">
-      <div class="left_1">
-        <div class="left_1_1">
-          <div class="balance">
-            <div class="balance1">
-              <p>Current balance</p>
-              <h3>TOP 55</h3>
-            </div>
-            <div class="button"><button>Buy Now</button></div>
-          </div>
-          <div class="expireson">
-            <div class="expire">
-              <p>Account expires on</p>
-              <h3>12-Dec-2025</h3>
-            </div>
-            <div class="button"><button>Top-Up</button></div>
-          </div>
-        </div>
-        <div class="left_1_2">
-          <div class="voucher">
-            <img src="voucher.png" alt="voucher" />
-            <p>VOUCHER TOP-UP</p>
-          </div>
-          <div class="arrow"><img src="arrow.png" alt="arrow" /></div>
-        </div>
-        <div class="left_1_3">
-          <h4>DIGICEL APPS</h4>
-          <div class="apps">
-            <div class="app1">
-              <img src="dtv.png" alt="mycash" />
-              <p>MyCash</p>
-            </div>
-            <div class="app2">
-              <img src="dtv.png" alt="ddtv" />
-              <p>Digicel TV</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="left_2">
-        <div class="active_plans" *ngIf="isactiveplan">
-          <h4>ACTIVE PLANS</h4>
-          <div class="middle">
-            <p>You have No Active Plans</p>
-            <div class="outter-button">
-              <div class="inner-button"><button>BUY PLANS</button></div>
-            </div>
-          </div>
-        </div>
-        <div class="left_2_1" *ngIf="!isactiveplan">
-          <div class="bundle">
-            <div class="heading">
-              <h4>BUNDLE BALANCES</h4>
-              <button>View Details</button>
-            </div>
-            <div class="options">
-              <div
-                class="data"
-                [ngClass]="{ highlight: isdata, light: !isdata }"
-                (click)="todata()"
-              >
-                Data
+<div class="main">
+  <div class="wrapper" (click)="toggle()">
+    <div
+      class="bottom_logo animate__animated animate__jello animate__slower animate__infinite"
+    >
+      <img src="bottom-logo.png" alt="" />
+    </div>
+    <div class="greeting" data-aos="fade-right" data-aos-duration="1000">
+      <p>Good Morning, Kenny</p>
+    </div>
+    <div class="section1">
+      <div class="left">
+        <div class="left_1">
+          <div class="left_1_1">
+            <div class="balance">
+              <div class="balance1">
+                <p>Current balance</p>
+                <h3>TOP 55</h3>
               </div>
-              <div
-                class="voice"
-                [ngClass]="{ highlight: isvoice, light: !isvoice }"
-                (click)="tovoice()"
-              >
-                Voice
+              <div class="button"><button>Buy Now</button></div>
+            </div>
+            <div class="expireson">
+              <div class="expire">
+                <p>Account expires on</p>
+                <h3>12-Dec-2025</h3>
               </div>
-              <div
-                class="sms"
-                [ngClass]="{ highlight: issms, light: !issms }"
-                (click)="tosms()"
-              >
-                SMS
+              <div class="button"><button>Top-Up</button></div>
+            </div>
+          </div>
+          <div class="left_1_2">
+            <div class="voucher">
+              <img src="voucher.png" alt="voucher" />
+              <p>VOUCHER TOP-UP</p>
+            </div>
+            <div class="arrow"><img src="arrow.png" alt="arrow" /></div>
+          </div>
+          <div class="left_1_3">
+            <h4>DIGICEL APPS</h4>
+            <div class="apps">
+              <div class="app1">
+                <img src="dtv.png" alt="mycash" />
+                <p>MyCash</p>
+              </div>
+              <div class="app2">
+                <img src="dtv.png" alt="ddtv" />
+                <p>Digicel TV</p>
               </div>
             </div>
           </div>
-          <div class="exhausted" *ngIf="isexhausted">
-            <p>YOUR DATA HAS BEEN EXHAUSTED</p>
-            <div class="outter-button">
-              <div class="inner-button"><button>BUY MORE</button></div>
+        </div>
+        <div class="left_2">
+          <div class="active_plans" *ngIf="isactiveplan">
+            <h4>ACTIVE PLANS</h4>
+            <div class="middle">
+              <p>You have No Active Plans</p>
+              <div class="outter-button">
+                <div class="inner-button"><button>BUY PLANS</button></div>
+              </div>
             </div>
           </div>
-          <div class="usage" *ngIf="!isexhausted">
-            <div class="usage_left">
-              <div class="usage_left_1">
-                <h4>DATA USAGE</h4>
-                <div class="data_usage">
-                  <h4>{{ remaineddata }}GB</h4>
-                  <p>left of {{ totaldata }} GB</p>
+          <div class="left_2_1" *ngIf="!isactiveplan">
+            <div class="bundle">
+              <div class="heading">
+                <h4>BUNDLE BALANCES</h4>
+                <button>View Details</button>
+              </div>
+              <div class="options">
+                <div
+                  class="data"
+                  [ngClass]="{ highlight: isdata, light: !isdata }"
+                  (click)="todata()"
+                >
+                  Data
+                </div>
+                <div
+                  class="voice"
+                  [ngClass]="{ highlight: isvoice, light: !isvoice }"
+                  (click)="tovoice()"
+                >
+                  Voice
+                </div>
+                <div
+                  class="sms"
+                  [ngClass]="{ highlight: issms, light: !issms }"
+                  (click)="tosms()"
+                >
+                  SMS
                 </div>
               </div>
-              <div class="usage_left_2">
-                <h4>2 GB DATA</h4>
-                <p>Expiring on 16-OCT-2025</p>
+            </div>
+            <div class="exhausted" *ngIf="isexhausted">
+              <p>YOUR DATA HAS BEEN EXHAUSTED</p>
+              <div class="outter-button">
+                <div class="inner-button"><button>BUY MORE</button></div>
               </div>
             </div>
-            <div class="usage_right">
-              <div
-                class="outter_circle"
-                [ngStyle]="{ 'background-image': getBorderGradient() }"
-              >
-                <div class="circle_wrapper">
-                  <div class="inner_circle">
-                    <h3>{{ percentage }}%</h3>
-                    <p>Remaining</p>
+            <div class="usage" *ngIf="!isexhausted">
+              <div class="usage_left">
+                <div class="usage_left_1">
+                  <h4>DATA USAGE</h4>
+                  <div class="data_usage">
+                    <h4>{{ remaineddata }}GB</h4>
+                    <p>left of {{ totaldata }} GB</p>
+                  </div>
+                </div>
+                <div class="usage_left_2">
+                  <h4>2 GB DATA</h4>
+                  <p>Expiring on 16-OCT-2025</p>
+                </div>
+              </div>
+              <div class="usage_right">
+                <div
+                  class="outter_circle"
+                  [ngStyle]="{ 'background-image': getBorderGradient() }"
+                >
+                  <div class="circle_wrapper">
+                    <div class="inner_circle">
+                      <h3>{{ percentage }}%</h3>
+                      <p>Remaining</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="left_2_2" *ngIf="!isactiveplan">
-          <div class="left_2_2-1">
-            <h4>ACTIVE PLANS</h4>
-            <button>More Plans</button>
-          </div>
-          <div class="left_2_2-2">
-            <p class="all_in_one">All In One - TOP 15</p>
-            <p>Expires On 24-Oct-2024</p>
-          </div>
-          <div class="left_2_2-3">
-            <div class="data">
-              <h6>5 GB</h6>
-              <p>data</p>
+          <div class="left_2_2" *ngIf="!isactiveplan">
+            <div class="left_2_2-1">
+              <h4>ACTIVE PLANS</h4>
+              <button>More Plans</button>
             </div>
-            <div class="voice">
-              <h6>400 Min(S)</h6>
-              <p>Voice</p>
+            <div class="left_2_2-2">
+              <p class="all_in_one">All In One - TOP 15</p>
+              <p>Expires On 24-Oct-2024</p>
             </div>
-            <div class="sms">
-              <h6>100 Sms</h6>
-              <p>SMS</p>
+            <div class="left_2_2-3">
+              <div class="data">
+                <h6>5 GB</h6>
+                <p>data</p>
+              </div>
+              <div class="voice">
+                <h6>400 Min(S)</h6>
+                <p>Voice</p>
+              </div>
+              <div class="sms">
+                <h6>100 Sms</h6>
+                <p>SMS</p>
+              </div>
+            </div>
+            <div class="left_2_2-4">
+              <span>+6</span>
+              <p>More Plans</p>
             </div>
           </div>
-          <div class="left_2_2-4">
-            <span>+6</span>
-            <p>More Plans</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right_1"><img src="right_1.png" alt="" /></div>
+        <div class="right_2"><img src="right_2.png" alt="" /></div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="offers" data-aos="flip-left" data-aos-duration="1000">
+        <div class="head"><h4>DIGICEL OFFERS</h4></div>
+        <div class="rewards card">
+          <p>REWARDS</p>
+          <img src="/logindashboard/section2/offers/rewards.png" alt="" />
+        </div>
+        <div class="loan card">
+          <p>EMERGENCY LOAN</p>
+          <img src="/logindashboard/section2/offers/loan.png" alt="" />
+        </div>
+        <div class="loyalty card">
+          <p>
+            LOYALTY POINTS<br />
+            2050
+          </p>
+          <img src="/logindashboard/section2/offers/loyalty.png" alt="" />
+        </div>
+      </div>
+      <div class="services" data-aos="flip-left" data-aos-duration="1000">
+        <h4>ADDITIONAL SERVICE</h4>
+        <div class="services_wrapper">
+          <div class="left-services">
+            <div class="call_me card">
+              <p>CALL ME</p>
+              <img src="/logindashboard/section2/services/call.png" alt="" />
+            </div>
+            <div class="credit_me card">
+              <p>CREDIT ME</p>
+              <img
+                src="/logindashboard/section2/services/credit_me.png"
+                alt=""
+              />
+            </div>
+            <div class="credit_u card">
+              <p>CREDIT U</p>
+              <img
+                src="/logindashboard/section2/services/credit_u.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="right-services">
+            <div class="refresh card">
+              <p>REFRESH DATA SERVICES</p>
+              <img src="/logindashboard/section2/services/refresh.png" alt="" />
+            </div>
+            <div class="gift card">
+              <p>GET A PLAN</p>
+              <img src="/logindashboard/section2/services/gift.png" alt="" />
+            </div>
+            <div class="update_status card">
+              <p>UPDATE SERVICE STATUS</p>
+              <img src="/logindashboard/section2/services/update.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="right">
-      <div class="right_1"><img src="right_1.png" alt="" /></div>
-      <div class="right_2"><img src="right_2.png" alt="" /></div>
-    </div>
-  </div>
-  <div class="section2">
-    <div class="offers" data-aos="flip-left" data-aos-duration="1000">
-      <h4>DIGICEL OFFERS</h4>
-      <div class="rewards card">
-        <p>REWARDS</p>
-        <img src="/logindashboard/section2/offers/rewards.png" alt="" />
-      </div>
-      <div class="loan card">
-        <p>EMERGENCY LOAN</p>
-        <img src="/logindashboard/section2/offers/loan.png" alt="" />
-      </div>
-      <div class="loyalty card">
-        <p>
-          LOYALTY POINTS<br />
-          2050
-        </p>
-        <img src="/logindashboard/section2/offers/loyalty.png" alt="" />
-      </div>
-    </div>
-    <div class="services" data-aos="flip-left" data-aos-duration="1000">
-      <h4>ADDITIONAL SERVICE</h4>
-      <div class="services_wrapper">
-        <div class="call_me card">
-          <p>CALL ME</p>
-          <img src="/logindashboard/section2/services/call.png" alt="" />
+      <div class="stores" data-aos="flip-left" data-aos-duration="1000">
+        <div class="head"><h4>STORES</h4></div>
+        <div class="purchase card">
+          <p>PURCHASE DEVICE</p>
+          <img src="/logindashboard/section2/stores/purchase.png" alt="" />
         </div>
-        <div class="credit_me card">
-          <p>CREDIT ME</p>
-          <img src="/logindashboard/section2/services/credit_me.png" alt="" />
-        </div>
-        <div class="credit_u card">
-          <p>CREDIT U</p>
-          <img src="/logindashboard/section2/services/credit_u.png" alt="" />
-        </div>
-        <div class="refresh card">
-          <p>REFRESH DATA SERVICES</p>
-          <img src="/logindashboard/section2/services/refresh.png" alt="" />
-        </div>
-        <div class="gift card">
-          <p>GET A PLAN</p>
-          <img src="/logindashboard/section2/services/gift.png" alt="" />
-        </div>
-        <div class="update_status card">
-          <p>UPDATE SERVICE STATUS</p>
-          <img src="/logindashboard/section2/services/update.png" alt="" />
+        <div class="dealer card">
+          <p>DEALER LOCATOR</p>
+          <img src="/logindashboard/section2/stores/dealer.png" alt="" />
         </div>
       </div>
-    </div>
-    <div class="stores" data-aos="flip-left" data-aos-duration="1000">
-      <h4>STORES</h4>
-      <div class="purchase card">
-        <p>PURCHASE DEVICE</p>
-        <img src="/logindashboard/section2/stores/purchase.png" alt="" />
-      </div>
-      <div class="dealer card">
-        <p>DEALER LOCATOR</p>
-        <img src="/logindashboard/section2/stores/dealer.png" alt="" />
-      </div>
-    </div>
-    <div class="support" data-aos="flip-left" data-aos-duration="1000">
-      <h4>SUPPORT</h4>
-      <div class="support_wrapper">
-        <div class="faq card card_s">
-          <p>FAQS</p>
-          <img src="/logindashboard/section2/support/faq.png" alt="" />
-        </div>
-        <div class="message_us card card_s">
-          <p>MESSAGE US</p>
-          <img src="/logindashboard/section2/support/message.png" alt="" />
-        </div>
-        <div class="information card card_s">
-          <p>HELPFUL INFORMATION</p>
-          <img src="/logindashboard/section2/support/information.png" alt="" />
-        </div>
-        <div class="settings card card_s">
-          <p>SETTINGS</p>
-          <img src="/logindashboard/section2/support/setting.png" alt="" />
+      <div class="support" data-aos="flip-left" data-aos-duration="1000">
+        <div class="head"><h4>SUPPORT</h4></div>
+        <div class="support_wrapper">
+          <div class="left-support">
+            <div class="faq card card_s">
+              <p>FAQS</p>
+              <img src="/logindashboard/section2/support/faq.png" alt="" />
+            </div>
+            <div class="message_us card card_s">
+              <p>MESSAGE US</p>
+              <img src="/logindashboard/section2/support/message.png" alt="" />
+            </div>
+          </div>
+          <div class="right-support">
+            <div class="information card card_s">
+              <p>HELPFUL INFORMATION</p>
+              <img
+                src="/logindashboard/section2/support/information.png"
+                alt=""
+              />
+            </div>
+            <div class="settings card card_s">
+              <p>SETTINGS</p>
+              <img src="/logindashboard/section2/support/setting.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

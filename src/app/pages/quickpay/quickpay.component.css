@@ -322,3 +322,11 @@ form {
     padding-right: 20px;
   } */
 }
+
+@media(min-width:1620px){
+  .wrapper{
+    max-width: 1620px;
+    margin: 0px auto;
+    min-height: 400px;
+  }
+}

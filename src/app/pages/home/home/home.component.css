@@ -95,14 +95,14 @@
 
 .card-container {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 10px;
   /* gap: 30px; */
 }
 .para {
-  margin-right: 20px;
-  width: 48%;
+  /* margin-right: 20px; */
+  width: 49.5%;
   font-size: 1.8em;
   opacity: 0.8;
   padding-top: 30px;
@@ -118,7 +118,7 @@
 
 .card-data {
   width: 24%;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /* max-width: 280px; */
   min-height: 300px;
 }
@@ -439,5 +439,17 @@
   }
   .section4_right_2 {
     left: 25%;
+  }
+}
+
+@media (min-width: 1620px) {
+  .main {
+    max-width: 1620px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+    margin: 0px auto;
   }
 }
